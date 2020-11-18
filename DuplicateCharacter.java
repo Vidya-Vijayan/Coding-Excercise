@@ -12,7 +12,9 @@ public class Main
 	    String entrdString = scanner.nextLine();
 	    System.out.println("The duplicate characters are : ");
 	    Map<Character, Integer> map = new HashMap<Character, Integer>();
-	    for(Character character : entrdString.replaceAll("\\s", "").toCharArray()){
+	    entrdString = entrdString.replaceAll("\\s", "").toCharArray();
+	    	
+	    for(Character character : entrdString){
 	        if(map.containsKey(character)) 
 	            map.put(character,(Integer)map.get(character) + 1);
 	        else 
