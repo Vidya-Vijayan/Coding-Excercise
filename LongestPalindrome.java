@@ -12,7 +12,6 @@ public class Main
 	    	String entrdString = scanner.nextLine();
 		scanner.close();
 		
-        	entrdString = entrdString.toLowerCase();
         	HashSet<Character> hs = new HashSet<>();
         	int count = 0;
 
