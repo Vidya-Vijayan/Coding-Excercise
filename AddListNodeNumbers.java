@@ -2,8 +2,7 @@
  https://leetcode.com/problems/add-two-numbers/
  */
 
-class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
         ListNode ln = new ListNode();
         ListNode curr = ln;
@@ -24,4 +23,3 @@ class Solution {
         }
         return ln.next;
     }
-}
